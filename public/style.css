@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Pathway+Extreme:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;500&display=swap');
+
+html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Pathway Extreme', sans-serif;
+    line-height: 1.55rem;
+    background-color: #44AF91;
+    color: black;
+}
+
+nav{
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid #F1DEC9;
+    border-bottom-style: dashed;
+
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    text-decoration: none;
+    list-style: none;
+    margin-left: -35px;
+    width: 100%;
+    color: black;
+}
+
+h2{
+    font-size:16px;
+    font-weight: 600;
+    text-decoration: wavy;
+    margin:0px;
+    padding-top: 5px;
+}
+
+footer{
+    border-top: 1px solid #F1DEC9;
+    border-top-style: dashed;
+    margin-top: 150px;
+    text-align: center;
+    padding: 20px;
+}
+
+.main{
+    width:auto;
+}
+
+body{
+    margin: 0;
+}
+
+.body{
+    display: flex;
+    padding-left: 20px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.body a{
+    font-weight: 300;
+    text-transform: none;
+
+}
+
+.div{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 20px;
+    padding-bottom: 0px;
+    margin: 10px;
+    width: 26vw;
+    height: auto;
+    background: #d3dcd91f;
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    max-height: 440px;
+    overflow: hidden;
+}
+
+.div-2{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 20px;
+    padding-bottom: 0px;
+    margin: 10px;
+    width: 26vw;
+    height: auto;
+    background: #d3dcd91f;
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    max-height: 440px;
+    overflow: hidden;
+}
+
+.div p, .div-2 p{
+    font-size: 15px;
+}
+
+
+form{
+    
+    gap: 10px;
+    margin-top: 30px;
+    padding: 0px 30px;
+    width: auto;
+}
+
+label{
+    display: flex;
+    justify-content: center;
+    width: 102%;
+    text-align: center;
+    font-weight: bold;
+}
+
+input{
+    margin: 0px;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    padding: 10px 0px;
+    background-color: transparent;
+}
+
+input:focus{
+    outline: none;
+}
+
+textarea{
+    width: 100%;
+    height: 100vh;
+    border-radius: 5px;
+    border: none;
+    background-color: transparent;
+}
+
+textarea:focus{
+    outline: none;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+}
+
+button{
+    padding: 10px 20px;
+    font-family: 'Pathway Extreme';
+    font-weight: 600;
+    background: #d3dcd966;
+    box-shadow: 0px 0px 5px 0px rgb(0 0 0 / 41%);
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+input::placeholder{
+    color: rgb(39, 39, 39);
+    font-size: 16px;
+    font-family: 'Nunito';
+}
+
+textarea::placeholder{
+    color: rgb(39, 39, 39);
+    font-size: 14px;
+    font-family: 'Nunito';
+}
+
+a{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    font-size:15px;
+}
+
+.content{
+    padding: 10px 20px;
+}
+
+.connect p{
+    line-height: 2rem;
+}
+
+.delete{
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+.delete svg{
+    cursor: pointer;
+}
+
+@media screen and (max-width:1440px) {
+    label{
+        width:101.5%;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    label{
+        width: 103.5%;
+    }
+}
+
+@media screen and (max-width:768px){
+    .div{
+        width: 39vw;
+    }
+}
+
+@media screen and (max-width:425px){
+    .div{
+        max-height: 210px;
+        width:27vw;
+    }
+
+    .div p{
+        font-size: 10px;
+        line-height: 125%;
+    }
+
+    h2{
+        font-size: 14px;
+    }
+
+    label{
+        width:106%;
+    }
+}
+

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('head.ejs') %>
+<body class="main">
+   
+
+ <%- include('nav.ejs') %>
+
+ <!--provides a structure of how the results form the database should be printed on to our site,
+ using js if statement which takes in blogs(from the database) and try to determine if the length of it in the database is grater than
+ zero if so it render each blog using the foreach loop the arranges the blog  based on the structure that is similar to that of the mongoose Schema -->
+ <div class="body">
+    <% if (blogs.length > 0) { %>
+        <% blogs.forEach(blog => { %>
+            <a class="index" href="/blogs/<%=blog._id %>" >
+            <div class="div">
+                <h2 class="title"><%=blog.title %></h2>
+                <p class="para"><%=blog.body%></p>
+            </div>
+            
+        </a>
+       
+        <% }) %>
+       <% } %>
+ </div>
+   
+ 
+ 
+
+    <%- include('footer.ejs') %>
+</body>
+</html>
